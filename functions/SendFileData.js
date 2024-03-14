@@ -3,8 +3,7 @@ const fs = require('fs');
 exports.handler = async function(event) {
     // 요청에서 파일 경로 가져오기
     console.log("요청중");
-    console.log("__dirname:", __dirname);
-    const filePath = './storagefile';
+    const filePath = './ksjmetaverseshop/storagefile';
     // 파일 읽기
     try {
         const fileData = fs.readFileSync(filePath);
